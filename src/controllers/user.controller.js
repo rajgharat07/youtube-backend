@@ -442,7 +442,7 @@ const getWatchHistory = asyncHandler( async(req,res) => {
 
         {
             $match: {
-                _id: new mongoose.Schema.Types.ObjectId(req.user._id)
+                _id: new mongoose.Types.ObjectId(req.user._id)
             }
         },
         {
